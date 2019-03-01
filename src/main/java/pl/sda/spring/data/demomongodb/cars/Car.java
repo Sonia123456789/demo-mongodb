@@ -7,6 +7,7 @@ import lombok.Data;
 @Builder
 public class Car {
 
+    Long id;
     String brand;
     String model;
     int hp;

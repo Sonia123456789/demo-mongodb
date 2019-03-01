@@ -22,6 +22,7 @@ public class DemoMongodbApplicationTests {
 	@Test
 	public void testTemplate() {
 		Car car = Car.builder()
+				.id(10L)
 				.brand("Ferrari")
 				.model("812 Superfast")
 				.hp(800)
