@@ -43,6 +43,8 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter {
                 .antMatchers(HttpMethod.POST, "/api/**").hasRole("ADMIN")
             .and()
             .formLogin()
-                .loginPage("/login").permitAll();
+                .loginPage("/login").permitAll()
+            .and()
+            .logout().permitAll();
     }
 }
